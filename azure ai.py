@@ -18,14 +18,14 @@ cv_text = extract_text_from_pdf(PDF_PATH)  # Extracted CV text
 # -------------------- Step 2: Azure OpenAI Setup --------------------
 
 # Azure OpenAI Credentials
-endpoint = "https://moham-m784omgp-swedencentral.openai.azure.com/"
-api_key = "1cIDacWArMuSoAxzPkXr9eDNEgKDiLLESAyTjWeEGi6ayeTo9E4rJQQJ99BBACfhMk5XJ3w3AAAAACOG4jQf"
-deployment = "gpt-4"  # Use the correct Azure deployment name
+endpoint = "URI"
+api_key = "API key"
+deployment = "deployment name"  # Use the correct Azure deployment name
 
 client = AzureOpenAI(
     azure_endpoint=endpoint,
     api_key=api_key,
-    api_version="2024-08-01-preview",
+    api_version="model version",
 )
 
 # -------------------- Step 3: Define Questions --------------------
@@ -46,7 +46,7 @@ chat_prompt = [
 completion = client.chat.completions.create(
     model=deployment,
     messages=chat_prompt,
-    max_tokens=800,
+    max_tokens="change this based on how much you wanna limit your token (integer)",
     temperature=0.7,
     top_p=0.95,
     frequency_penalty=0,
