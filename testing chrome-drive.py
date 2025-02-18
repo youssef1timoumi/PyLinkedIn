@@ -24,7 +24,6 @@ url = "https://www.linkedin.com/jobs/search?keywords=Devops&location=Tunisia&geo
 # Load the job search page
 driver.get(url)
 time.sleep(5)  # Allow JavaScript to load
-
 try:
     # Extract the first job link
     first_job = WebDriverWait(driver, 10).until(
