@@ -21,7 +21,6 @@ url = "https://www.linkedin.com/jobs/search?keywords=Devops&location=Tunisia&geo
 driver.get(url)
 # Wait for JavaScript to load
 time.sleep(5)  # Adjust if needed
-
 # Get full page source
 html_content = driver.page_source
 driver.quit()  # Close the browser after fetching content
