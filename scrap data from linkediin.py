@@ -16,7 +16,7 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 driver.delete_all_cookies()
 # LinkedIn job search URL
-url = "https://www.linkedin.com/jobs/search?keywords=Devops&location=tunisia"
+url = "https://www.linkedin.com/jobs/search?keywords=Devops&location=Tunisia&geoId=&position=1&pageNum=0"
 # Load the page
 driver.get(url)
 # Wait for JavaScript to load
@@ -37,7 +37,6 @@ for i, job in enumerate(job_cards[:10]):  # Limit to first 10 jobs
     company = job.find("h4", class_="base-search-card__subtitle").get_text(strip=True) if job.find("h4", class_="base-search-card__subtitle") else "N/A"
     location = job.find("span", class_="job-search-card__location").get_text(strip=True) if job.find("span", class_="job-search-card__location") else "N/A"
     job_link = job.find("a", class_="base-card__full-link")["href"] if job.find("a", class_="base-card__full-link") else "N/A"
-
     print(f"📌 Job {i+1}:")
     print(f"   🏢 Company: {company}")
     print(f"   📍 Location: {location}")
