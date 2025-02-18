@@ -6,7 +6,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 import time
-
 # 🔹 Replace with your LinkedIn credentials
 LINKEDIN_EMAIL = "email"
 LINKEDIN_PASSWORD = "password"
