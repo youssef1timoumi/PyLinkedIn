@@ -27,4 +27,4 @@ This project contains various scripts for:
 - Sending extracted data to Azure OpenAI for AI-driven analysis
 
 ## 🚧 Work in Progress
-I am actively working on improving this script! Stay tuned for updates. 🚀
+I am actively working on improving this script! Stay tuned for updates, its for education purposes!! 🚀
