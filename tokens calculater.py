@@ -16,6 +16,5 @@ cv_text = extract_text_from_pdf(PDF_PATH)
 print(cv_text)
 questions = "\n".join(["What is the candidate's name?", "What are the candidate's key skills?", "What is the candidate's work experience?"])
 system_prompt = "You are an AI assistant that extracts information from resumes (CVs) and answers specific questions."
-
 total_tokens = count_tokens(cv_text) + count_tokens(questions) + count_tokens(system_prompt)
 print(f"Total estimated tokens: {total_tokens}")
