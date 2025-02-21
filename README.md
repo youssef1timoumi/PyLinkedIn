@@ -1,12 +1,9 @@
 # LinkedIn Job Scraper
 
 ## 📌 About
-This is a simple Python script that scrapes job postings from LinkedIn using Selenium and BeautifulSoup. The script fetches job titles, company names, locations, and job links based on a given search query.
+This is a simple Python script that scrapes job postings from LinkedIn using Selenium and BeautifulSoup, login to linkedin (even with 2fa) and sends data from "cv.pdf" to ai to answer several questions
 
-## 🚀 Features
-- Uses Selenium to load LinkedIn job search results.
-- Extracts job details using BeautifulSoup.
-- Runs in headless mode for efficiency.
+
 ## 🔧 Installation
 ```bash
 pip install openai
